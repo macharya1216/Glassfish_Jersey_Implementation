@@ -49,7 +49,7 @@ public class MyJerseyClientServiceTest {
 
         MyJerseyClientService myJerseyClientService = new MyJerseyClientService(client);
         MultipleObjectHolder<String,Integer> map = myJerseyClientService.sendResponse(urlToTest);
-
+        // adding some things
         assertTrue(map != null);
         assertTrue(map.a != null && map.b != null);
         System.out.println("Response is "+ map.a +"and status code is" +map.b );
